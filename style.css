@@ -6,9 +6,8 @@
 .Img {
     scale: 150%;
     margin: auto;
-    display: flex;
+    display: block;
     margin-top: 50px;
-    border-radius: 10px;
 }
 
 .Intressen {
