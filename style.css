@@ -10,12 +10,14 @@
     margin-top: 50px;
     border-radius: 10px;
 }
+
 .Intressen {
      font-family: Georgia, 'Times New Roman', Times, serif,;
     text-align: center;
     font-size: 50px;
     background-color:rgb(179, 255, 135);
 }
+
 h1 {
     padding:10px;
     font-family: Georgia, 'Times New Roman', Times, serif,;
@@ -42,15 +44,16 @@ h2 {
 }
 
 h5 {
-    margin-top: -70px;
+    margin-top: -60px;
     text-align: left;
-    margin-left: 300px;
-    font-size: 50px;
+    margin-left: 150px;
+    font-size: 30px;
 }
 .img {
-    width: 800px;
-    height: 500px;
-    padding: 80px;
+   border-radius: 20px;
+    width: 500px;
+    height: 200px;
+    padding: 60px;
     align-items: center;
     display: flex;
    
