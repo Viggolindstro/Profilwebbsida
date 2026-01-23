@@ -1,27 +1,28 @@
-// Theme toggle functionality
-const themeToggle = document.getElementById('theme-toggle');
-const rootElement = document.documentElement;
+function toggleDarkMode() {
+  document.body.classList.toggle("dark");
 
-// Check for saved theme preference, otherwise use system preference
-const getPreferredTheme = () => {
-  const savedTheme = localStorage.getItem('theme');
-  if (savedTheme) return savedTheme;
+  if (document.body.classList.contains("dark")) {
 
-  return window.matchMedia('(prefers-color-scheme: dark)').matches 
-    ? 'dark' 
-    : 'light';
+    localStorage.setItem("theme", "dark");
+
+  } else {
+
+    localStorage.setItem("theme", "light");
+
+  }
+
+}
+document.querySelector("#theme-toggle").addEventListener("click", toggleDarkMode);
+function loadTheme() {
+
+  const theme = localStorage.getItem("theme");
+
+  if (theme === "dark") {
+
+    document.body.classList.add("dark");
+
+  }
+
 }
 
-// Set theme on page load
-document.addEventListener('DOMContentLoaded', () => {
-  rootElement.setAttribute('data-theme', getPreferredTheme());
-});
-
-// Handle toggle button click
-themeToggle.addEventListener('click', () => {
-  const currentTheme = rootElement.getAttribute('data-theme');
-  const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-
-  rootElement.setAttribute('data-theme', newTheme);
-  localStorage.setItem('theme', newTheme);
-});
+loadTheme();

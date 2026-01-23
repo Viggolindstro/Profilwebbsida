@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    background-color: rgb(137, 255, 137)
 }
 .Img {
     scale: 150%;
@@ -14,7 +13,6 @@
      font-family: Georgia, 'Times New Roman', Times, serif,;
     text-align: center;
     font-size: 50px;
-    background-color:rgb(179, 255, 135);
 }
 
 h1 {
@@ -23,7 +21,6 @@ h1 {
     scale: 300px;
     text-align: center;
     font-size: 100px;
-    background-color: rgb(179, 255, 135);
 }
 
 h2 {
@@ -31,7 +28,6 @@ h2 {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
     font-size: 70px;
-    background-color:rgb(137, 255, 137);
 }
 
  p {
@@ -49,7 +45,7 @@ h5 {
     font-size: 30px;
 }
 .img {
-   border-radius: 20px;
+   border-radius: 5px;
     width: 500px;
     height: 200px;
     padding: 60px;
@@ -59,31 +55,15 @@ h5 {
    
 }
 
-:root {
-  --light-icon-display: block;
-  --dark-icon-display: none;
+body {
+ background-color:rgb(137, 255, 137);
+ color: black;
 }
 
-[data-theme="dark"] {
-  --light-icon-display: none;
-  --dark-icon-display: block;
+.dark {
+  background-color:rgb(74, 134, 74);
+  color: black;
 }
-
-#theme-toggle {
-  background: var(--surface);
-  border: 1px solid var(--text);
-  padding: 8px 12px;
-  border-radius: 6px;
-  cursor: pointer;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-}
-
-.light-icon {
-  display: var(--light-icon-display);
-}
-
-.dark-icon {
-  display: var(--dark-icon-display);
+ul {
+  background-color:rgb(184, 255, 143);
 }
