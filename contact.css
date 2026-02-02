@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-color: rgb(132, 4, 4);
+}
+
+nav {
+    text-align: center;
+    font-size: 40px;
+    background-color:rgb(143, 50, 50);
+}
+#contactform {
+    display:flex;
+}
+div {
+}

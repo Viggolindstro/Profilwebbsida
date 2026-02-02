@@ -1,5 +1,47 @@
-<nav>
+<!DOCTYPE html> 
+
+<html lang="sv"> 
+
+<head> 
+
+  <meta charset="UTF-8"> 
+
+  <title>Kontaktformulär</title> 
+
+  <script src="script.js" defer></script> 
+
+  <link rel="stylesheet" href="./contact.css" />
+
+
+</head> 
+
+<body> 
+    <nav>
     <a href="index.html">Hem</a>
     <a href="portfolio.html">Portfolio</a>
     <a href="contact.html">Kontakt</a>
 </nav>
+
+
+ <h1>Kontakta mig</h1> 
+
+<form id="contactForm"> 
+
+  <label for="name">Namn:</label> 
+
+  <input type="text" id="name" placeholder="Ditt namn"> 
+ 
+
+  <label for="message">Meddelande:</label> 
+
+  <textarea id="message" placeholder="Skriv ditt meddelande här"></textarea> 
+<div class="skicka">
+  <button type="submit">Skicka</button> 
+  </div>
+</form> 
+
+<p id="success"></p> 
+
+</body> 
+
+</html> 
